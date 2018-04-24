@@ -21,9 +21,14 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4",
+    "electron-builder": "^20.10.0",
     "electron-rebuild": "^1.7.3"
   },
   "dependencies": {
     "sqlite3": "^4.0.0"
+  },
+  "build": {
+    "appId": "com.example.app",
+    "npmRebuild": false
   }
 }

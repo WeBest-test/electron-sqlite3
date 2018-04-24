@@ -14,7 +14,7 @@ db.serialize(function() {
   stmt.finalize();
 
   db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
-      console.log(row.id + ": " + row.info);
+      document.querySelector('body').insertAdjacentHTML('afterend', (row.id + ": " + row.info) );
   });
 });
 
